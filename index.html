@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap, CSS e Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>SENAC - Chatbot</title>
+</head>
+<body>
+<div id="bg-senac"></div>
+
+
+
+
+<div class="container-icon">
+    <div class="container-icon-bg">
+        <div id="icon-isa">
+                <a href="#" onclick="show('chat')"> <img src="assets/img/isa-icon-chat.svg" width="40px" style="margin-top: 12px; margin-left: 12px;"></a>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="initial-approach">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="title-initial-approach"><img src="assets/img/isa-icon-chat.svg" width="22px"> ISA</div>
+        </div>
+        <div class="col-md-2">
+            <a href="#" class="bt-close" onclick="hide('initial-approach')">X</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="#" onclick="show('chat')" style="text-decoration: none;"> <p class="txt-initial-approach">Olá! Eu sou a Isa, assistente virtual do Senac São Paulo e estou aqui para ajudar. Vamos começar?</p></a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div id="chat" class="chat-content hide">
+    <div class="chat-content-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10"><img src="assets/img/logo-senac.png"><br>Assistente virtual do Senac São Paulo</div>
+                <div class="col-md-2">
+                    <a href="#" class="bt-close-chat" onclick="hide('chat')">X</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <ul class="messages"></ul>
+    <div class="bottom_wrapper clearfix">
+        <div class="message_input_wrapper"><input class="message_input" placeholder="Digite sua mensagem"/></div>
+        <div class="send_message">
+            <div class="icon"></div>
+            <div class="text"><img src="assets/img/icon-send.png"> </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    function show(target) {
+        document.getElementById(target).style.display = 'block';
+    }
+    function hide(target) {
+        document.getElementById(target).style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

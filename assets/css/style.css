@@ -1,0 +1,536 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+#bg-senac {
+    width: 100%;
+    height: 1957px;
+    margin: auto;
+    position: relative;
+    background-image: url("../img/background-senac.png");
+    background-position: center top;
+}
+
+.hide {
+    display: none;
+}
+
+/* ====== Icon Chat and Approach======*/
+
+.container-icon {
+    opacity: 1;
+    position: fixed;;
+    right: 22px;
+    bottom: 22px;
+}
+.container-icon-bg {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 31px 31px 6px;
+    background-color: #004c94;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+}
+
+#initial-approach {
+    position: fixed;
+    background-color: #ffffff;
+    width: 275px;
+    height: 120px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    right: 22px;
+    bottom: 100px;
+    animation: fadein 4s;
+}
+.title-initial-approach{
+    color: #f7941d;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 10px;
+}
+
+.txt-initial-approach{
+    color: #848e9a;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 8px;
+}
+.bt-close {
+    color: #848e9a;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    top: 5px;
+    right: -10px;
+    text-align: right;
+}
+.bt-close-chat {
+     color: #ffffff;
+     font-size: 14px;
+     font-weight: 400;
+     position: relative;
+     top: -12px;
+     right: -28px;
+     text-align: right;
+ }
+
+.bt-close-chat:hover {
+    color: #f68b1e;
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+/* ====== Chat ======*/
+
+.chat-content {
+    position: fixed;
+    background-color: #f8f9fb;
+    width: 380px;
+    height: 580px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    right: 22px;
+    bottom: 100px;
+    animation: fadeinchat 1s;
+    overflow: hidden;
+}
+@keyframes fadeinchat {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.chat-content-header {
+    background-color: #004c94;
+    width: 100%;
+    height: 80px;
+    padding: 20px 0 15px;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: solid 2px #f68b1e;
+}
+
+
+.messages {
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 453px;
+    background-color: #a3d063;
+    overflow: scroll;
+}
+.messages .message {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.messages .message.left .avatar {
+    background-color: #f5886e;
+    float: left;
+}
+.messages .message.left .text_wrapper {
+    background-color: #ffe6cb;
+    margin-left: 20px;
+}
+.messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
+    right: 100%;
+    border-right-color: #ffe6cb;
+}
+.messages .message.left .text {
+    color: #c48843;
+}
+.messages .message.right .avatar {
+    background-color: #fdbf68;
+    float: right;
+}
+.messages .message.right .text_wrapper {
+    background-color: #c7eafc;
+    margin-right: 20px;
+    float: right;
+}
+.messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
+    left: 100%;
+    border-left-color: #c7eafc;
+}
+.messages .message.right .text {
+    color: #45829b;
+}
+.messages .message.appeared {
+    opacity: 1;
+}
+.messages .message .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.messages .message .text_wrapper {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 6px;
+    width: calc(100% - 85px);
+    min-width: 100px;
+    position: relative;
+}
+.messages .message .text_wrapper::after, .messages .message .text_wrapper:before {
+    top: 18px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.messages .message .text_wrapper::after {
+    border-width: 13px;
+    margin-top: 0px;
+}
+.messages .message .text_wrapper::before {
+    border-width: 15px;
+    margin-top: -2px;
+}
+.messages .message .text_wrapper .text {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.bottom_wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    border:  solid 1px #ededed;
+}
+.bottom_wrapper .message_input_wrapper {
+    display: inline-block;
+    height: 50px;
+    width: calc(100% - 45px);
+    position: relative;
+    padding: 0 10px;
+}
+.bottom_wrapper .message_input_wrapper .message_input {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
+    position: absolute;
+    outline-width: 0;
+    color: #a2a2a2;
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.bottom_wrapper .send_message {
+    width: 45px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    float: right;
+}
+.bottom_wrapper .send_message:hover {
+    color: #a3d063;
+    background-color: #fff;
+}
+.bottom_wrapper .send_message .text {
+    font-size: 18px;
+    font-weight: 300;
+    display: inline-block;
+    line-height: 48px;
+}
+
+
+
+
+/* Change Placeholder* /
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a2a2a2;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #a2a2a2;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #a2a2a2;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #a2a2a2;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:    #a2a2a2;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    #a2a2a2;
+}
+
+/* =============== CSS CHATBOT ORIGINAL =================*/
+
+#chat_box {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+#footer {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    /* background-color: #2980b9; */
+}
+
+#footer .content {
+    padding-top: 4px;
+    padding-left: 4px;
+    position: relative;
+}
+
+#user { width: 20%; display:none }
+#message { width: 68%; }
+#send_btn {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="button"] {
+    border: 0;
+    height: 80%;
+}
+
+input[type="text"] {
+    padding: 3px 10px;
+}
+
+input[type="button"] {
+    /* background-color: #f39c12;
+    border-right: 2px solid #e67e22;
+    border-bottom: 2px solid #e67e22; */
+    min-width: 70px;
+    display: inline-block;
+}
+
+input[type="button"]:hover {
+    background-color: #a9cace;
+    border-right: 2px solid #a9cace;
+    border-bottom: 2px solid #a9cace;
+    cursor: pointer;
+}
+
+.msg-user{
+    clear: both;
+    background: #fdc280;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    max-width: 80%;
+    float: right;
+}
+
+.msg-senac{
+    clear: both;
+    background: #004a8d;
+    color: #FFF;
+    border-radius: 30px;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    max-width: 75%;
+}
+
+.msg-senac a:link,
+.msg-senac a:visited,
+.msg-user a:link,
+.msg-user a:visited{
+    color: #FFF;
+    cursor: pointer;
+}
+
+.msg-senac a:hover,
+.msg-user a:hover{
+    color: #fdc280;
+}
+
+.system,
+.username {
+    color: #aaa;
+    font-style: italic;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+@media(max-width: 1000px) {
+    .content { width: 100%; }
+}
+
+@media(max-width: 780px) {
+    #footer { height: 50px; }
+    #chat_box { padding-bottom: 70px; }
+
+    /* #user { width: 100%; } */
+    #message { width: 75%; }
+}
+
+@media(max-width: 400px) {
+    #footer { height: 50px; }
+    #chat_box { padding-bottom: 70px; }
+
+    #message { width: 75%; }
+    #send_btn {
+        position: relative;
+        margin-top: 3px;
+        width: 20%;
+    }
+}
+
+/* muita coragem a partir daqui */
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0
+}
+
+.mySlides {
+    display: none;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+        font-size: 11px
+    }
+}

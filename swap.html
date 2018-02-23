@@ -1,0 +1,160 @@
+<head>
+    <!-- Viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap, CSS e Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://firebasestorage.googleapis.com/v0/b/saveftp-ce9d7.appspot.com/o/arquivos%2Fstyle.css?alt=media&token=e88f2cd4-6374-48a6-a913-1ac2b19063b3">
+
+    <title>SENAC - Chatbot</title>
+
+
+    </head>  
+    <body>
+        <div id="wrapper">
+            <div id="chat_box" class="content"></div>
+    
+            <div id="footer">
+            <div class="content">
+                <input type="text" id="user" placeholder="Who are you?" />
+                <input type="text" id="message" placeholder="" />
+                <input type="button" id="send_btn" value=">" onclick="sendMessage()">
+            </div>
+            </div>
+        </div>
+    </body>
+          
+    <script type="text/javascript">
+        var wsUri = "wss://{{req.headers.host}}/ws/chat";
+        var ws = new WebSocket(wsUri);
+    
+        function createSystemMessage(message) {
+            var message = document.createTextNode(message);
+    
+            var messageBox = document.createElement('p');
+            messageBox.className = 'system';
+    
+            messageBox.appendChild(message);
+    
+            var chat = document.getElementById('chat_box');
+            chat.appendChild(messageBox);
+        }
+    
+        function createUserMessage(cliente, message) {
+            //var user = document.createTextNode("SENAC" + ': ');
+            // var user = "<img style='height:50px' src='" + (cliente == 1 ? "https://i.giphy.com/media/FRDFK0bgXdAic/source.gif" : "https://media.giphy.com/media/EaiV1pSuZATde/giphy.gif") + "'>";
+            // var userBox = document.createElement('span');
+            // userBox.className = 'username';
+            // //userBox.appendChild(user);
+            // userBox.innerHTML = user;
+    
+            //var message = document.createTextNode(message);
+    
+            var messageBox = document.createElement('p');
+            messageBox.className = cliente == 1 ? 'msg-user': 'msg-senac';
+            // messageBox.appendChild(userBox);
+            //messageBox.appendChild(message);
+            messageBox.innerHTML += message;
+    
+            var chat = document.getElementById('chat_box');
+            chat.appendChild(messageBox);
+    
+            if(message.indexOf('currentSlide(1)') > -1){
+                currentSlide(1)
+            }
+        }
+    
+        ws.onopen = function(ev) {
+            createSystemMessage('[CONECTADO]');
+            var payload = {
+                message: "ola",
+                cliente: 2,
+                user: user.value,
+                ts: (new Date()).getTime()
+            };
+    
+            ws.send(JSON.stringify(payload));
+        };
+    
+        ws.onclose = function(ev) {
+            createSystemMessage('[DESCONECTADO]');
+        }
+    
+        ws.onmessage = function(ev) {
+            var payload = JSON.parse(ev.data);
+            createUserMessage(payload.cliente, payload.message);
+    
+            var chat = document.getElementById('chat_box');
+            chat.scrollTop = chat.scrollHeight;
+        }
+    
+        function sendMessage() {
+        //   var user = document.getElementById('user');
+            var message = document.getElementById('message');
+            if(message.value.length > 0){
+                var payload = {
+                    message: message.value,
+                    user: "",
+                    cliente: 1,
+                    ts: (new Date()).getTime()
+                };
+        
+                ws.send(JSON.stringify(payload));
+                message.value = "";
+            }
+            message.focus();
+        };
+    
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }    
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    
+         function carouselClick(escolha){
+            var payload = {
+                message: escolha,
+                cliente: 2,
+                user: "",
+                ts: (new Date()).getTime()
+            };
+    
+            ws.send(JSON.stringify(payload));
+            document.getElementById('message').focus();
+         }
+    
+        document.getElementById('message').addEventListener('keydown', function(e){
+            if(e.keyCode == 13){
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+    
+        document.getElementById('message').focus();
+    </script>
+    
