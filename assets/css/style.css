@@ -300,11 +300,12 @@ body {
 /* =============== CSS CHATBOT ORIGINAL =================*/
 
 #chat_box {
-    box-sizing: border-box;
-    height: 100%;
     overflow: auto;
     padding-bottom: 50px;
-    margin-left: 25px
+    height: 453px;
+    width: 100%;
+    padding: 15px;
+    position: relative;
 }
 
 #footer {
