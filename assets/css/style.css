@@ -319,13 +319,26 @@ body {
 }
 
 #user { width: 20%; display:none }
-#message { width: 68%; }
-#send_btn {
-    width: 10%;
+#message {
+    border: none;
+    height: 100%;
+    box-sizing: border-box;
+    width: calc(100% - 40px);
     position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0;
+    outline-width: 0;
+    color: #a2a2a2;
+    font-size: 14px;
+    font-weight: 400;
+}
+#send_btn {
+    width: 45px;
+    height: 18px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    text-align: center;
+    float: right;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-send.png");
 }
 
 .content {
@@ -361,7 +374,7 @@ input[type="button"]:hover {
 .msg-user{
     clear: both;
     background: #f7941d;
-    color: #FFF;
+    color: #848e9a;
     border-radius: 8px;
     padding: 10px 15px 10px 15px;
     margin-bottom: 20px;
@@ -369,6 +382,7 @@ input[type="button"]:hover {
     width: auto;
     height: auto;
     float: right;
+    font-size: 14px;
 }
 
 .msg-senac{
@@ -402,7 +416,7 @@ input[type="button"]:hover {
 .username {
     color: #aaa;
     font-style: italic;
-    font-size: 12px;
+    font-size: 9px;
 }
 
 @media(max-width: 1000px) {
