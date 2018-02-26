@@ -331,7 +331,7 @@ body {
     font-weight: 400;
 }
 #send_btn {
-    width: 45px;
+    width: 20px;
     height: 18px;
     display: inline-block;
     cursor: pointer;
@@ -342,6 +342,7 @@ body {
     margin-top: 14px;
     background-color: transparent;
     margin-right: 10px;
+    border: none;
 }
 
 .content {
