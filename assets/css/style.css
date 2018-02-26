@@ -339,6 +339,9 @@ body {
     text-align: center;
     float: right;
     background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-send.png");
+    margin-top: 14px;
+    background-color: transparent;
+    margin-right: 10px;
 }
 
 .content {
@@ -346,11 +349,7 @@ body {
     margin: 0 auto;
 }
 
-input[type="text"],
-input[type="button"] {
-    border: 0;
-    height: 80%;
-}
+
 
 input[type="text"] {
     padding: 3px 10px;
@@ -360,14 +359,14 @@ input[type="button"] {
     /* background-color: #f39c12;
     border-right: 2px solid #e67e22;
     border-bottom: 2px solid #e67e22; */
-    min-width: 70px;
     display: inline-block;
 }
 
 input[type="button"]:hover {
-    background-color: #a9cace;
-    border-right: 2px solid #a9cace;
-    border-bottom: 2px solid #a9cace;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-send.png");
+    margin-top: 14px;
+    background-color: transparent;
+    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -387,7 +386,7 @@ input[type="button"]:hover {
 
 .msg-senac{
     background: #ececed;
-    color: #FFF;
+    color: #848e9a;
     border-radius: 8px;
     padding: 10px;
     width: auto;
