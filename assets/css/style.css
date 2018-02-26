@@ -360,23 +360,29 @@ input[type="button"]:hover {
 
 .msg-user{
     clear: both;
-    background: #fdc280;
+    background: #f7941d;
     color: #FFF;
-    border-radius: 30px;
+    border-radius: 8px;
     padding: 10px 15px 10px 15px;
     margin-bottom: 20px;
     margin-left: 20%;
-    max-width: 80%;
+    width: auto;
+    height: auto;
     float: right;
 }
 
 .msg-senac{
-    background: #004c94;
+    background: #ececed;
     color: #FFF;
     border-radius: 8px;
     padding: 10px;
-    width: 90%;
+    width: auto;
     height: auto;
+    position: relative;
+    float: left;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .msg-senac a:link,
