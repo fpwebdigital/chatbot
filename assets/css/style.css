@@ -412,6 +412,21 @@ input[type="button"]:hover {
     color: #fdc280;
 }
 
+.msg-senac ul {
+    list-style: none;
+}
+
+.msg-senac ul li {
+    background-color: #848e9a;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    list-style: none;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
 .system,
 .username {
     color: #aaa;
