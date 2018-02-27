@@ -553,7 +553,7 @@ img {
     background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -570,6 +570,7 @@ img {
     from {opacity: .4}
     to {opacity: 1}
 }
+*/
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
