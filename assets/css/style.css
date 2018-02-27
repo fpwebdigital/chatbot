@@ -414,6 +414,8 @@ input[type="button"]:hover {
 
 .msg-senac ul {
     list-style: none;
+    margin-left: -44px;
+    margin-top: 20px;
 }
 
 .msg-senac ul li {
@@ -424,6 +426,26 @@ input[type="button"]:hover {
     list-style: none;
     border-radius: 5px;
     color: #ffffff;
+}
+
+.msg-senac ul li:hover  {
+    background-color: #b8bdc3;
+}
+
+.msg-senac button {
+    background-color: #f7941d;
+    border: solid 1px #f7941d;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.msg-senac button:hover {
+    background-color: #004c94;
+    border: solid 1px #004c94;
 }
 
 
