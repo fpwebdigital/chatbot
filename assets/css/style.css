@@ -10,7 +10,7 @@ body {
     height: 1957px;
     margin: auto;
     position: relative;
-    background-image: url("../img/background-senac.png");
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/background-senac.png");
     background-position: center top;
 }
 
@@ -132,7 +132,7 @@ body {
     color: #ffffff;
     font-size: 14px;
     font-weight: 400;
-    border-bottom: solid 2px #f68b1e;
+    border-bottom: solid 4px #f68b1e;
 }
 
 .titulo-banner {
