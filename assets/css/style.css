@@ -430,6 +430,7 @@ input[type="button"]:hover {
 
 .msg-senac ul li:hover  {
     background-color: #b8bdc3;
+    cursor: pointer;
 }
 
 .msg-senac button {
@@ -446,6 +447,7 @@ input[type="button"]:hover {
 .msg-senac button:hover {
     background-color: #004c94;
     border: solid 1px #004c94;
+    cursor: pointer;
 }
 
 
