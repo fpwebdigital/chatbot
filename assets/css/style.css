@@ -325,7 +325,7 @@ body {
 #chat_box {
     overflow: auto;
     padding-bottom: 50px;
-    height: 453px;
+    height: 400px;
     width: 100%;
     padding: 15px;
     position: relative;
