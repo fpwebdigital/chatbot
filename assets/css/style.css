@@ -40,8 +40,9 @@ body {
 }
 
 .container-icon-bg img {
-    width: 60px !important;
-    margin-left: 10px !important;
+    width: 59px !important;
+    margin-left: 4px !important;
+    margin-top: 5px !important;
 }
 
 #initial-approach {
