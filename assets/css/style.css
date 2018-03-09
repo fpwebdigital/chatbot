@@ -27,7 +27,7 @@ body {
     bottom: 22px;
 }
 .container-icon-bg {
-    border: none;
+    border: solid 2px #f79420;
     outline: none;
     cursor: pointer;
     border-radius: 31px 31px 31px;
@@ -37,6 +37,7 @@ body {
     height: 64px;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/isa.png");
 }
 
 .container-icon-bg img {
