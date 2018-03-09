@@ -38,6 +38,9 @@ body {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
     background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/isa.png");
+    background-repeat: no-repeat;
+    background-position-x: 11px;
+    background-position-y: 1px;
 }
 
 .container-icon-bg img {
