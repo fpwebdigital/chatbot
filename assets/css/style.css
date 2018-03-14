@@ -623,24 +623,64 @@ input[type="button"]:hover {
 
 .msg-senac ul li {
     background-color: #ffffff;
-    padding: 10px;
+    padding: 14px;
     cursor: pointer;
     margin: -1px;
     list-style: none;
     color: #004c94;
     text-transform: uppercase;
-    border: solid 1px #000000;
+    border: solid 1px #ececed;
 }
 
 .msg-senac ul li:first-child {
     border-radius: 18px 18px 1px 1px;
 }
 
+.msg-senac ul li:last-child {
+    border-radius: 1px 1px 18px 18px;
+}
+
 
 .msg-senac ul li:hover  {
-    background-color: #b8bdc3;
+    background-color: #ececed;
+    color: #004c94;
+    text-decoration: none;
     cursor: pointer;
 }
+
+.msg-senac-text-lista {
+    width: 276px;
+    height: auto;
+    position: relative;
+    margin-left: 63px;
+    margin-top: -28px;
+}
+
+/*ÍCONES DAS LISTAS*/
+
+.lista-vestibular-icon-1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-ead.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+.lista-vestibular-icon-2 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-vestibular.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
 
 .msg-senac button {
     background-color: #f7941d;
