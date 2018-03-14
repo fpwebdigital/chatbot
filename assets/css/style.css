@@ -737,6 +737,66 @@ input[type="button"]:hover {
     margin-top: -4px;
 }
 
+.lista-icon-padrao  {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-padrao.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.lista-icon-sim  {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-sim.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.lista-icon-nao  {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-nao.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.lista-carrosselinicial-1  {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-graduacao.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.lista-carrosselinicial-2  {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-vestibular.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
 
 
 
