@@ -508,12 +508,12 @@ input[type="button"]:hover {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: aqua;
     position: relative;
     width: auto;
     height: auto;
     color: #6b6b6b;
-    z-index: 5;
+    z-index: 1;
+    margin-bottom: 20px;
 }
 
 
@@ -521,7 +521,6 @@ input[type="button"]:hover {
     width: 53px;
     height: auto;
     position: absolute;
-    background-color: blue;
     float: left;
     margin-right: 10px;
     bottom: 0px;
@@ -530,9 +529,8 @@ input[type="button"]:hover {
 .msg-senac-avatar-name {
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     color: #f7941d;
 }
 .msg-senac-avatar-icon {
@@ -547,18 +545,21 @@ input[type="button"]:hover {
     background-color: #ececed;
     transform: rotate(90deg) scale(0.500) skew(43deg) translate(-52px);
     position: absolute;
-    left: -38px;
-    bottom: -23px;
+    left: 20px;
+    bottom: -6px;
+    z-index: 3;
 }
 
 
 .msg-senac-text {
     border-radius: 18px 18px 18px 1px;
-    background-color: #ececed;;
-    padding: 10px;
+    background-color: #ececed;
+    padding: 17px;
     float: left;
     width: calc(100% - 64px);
     margin-left: 58px;
+    margin-bottom: 20px;
+    z-index: 10;
 }
 
 
