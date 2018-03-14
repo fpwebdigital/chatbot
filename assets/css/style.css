@@ -491,7 +491,6 @@ input[type="button"]:hover {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: lawngreen;
     position: relative;
     width: auto;
     height: auto;
@@ -500,12 +499,13 @@ input[type="button"]:hover {
     margin-bottom: 20px;
 }
 .msg-user-avatar {
-    width: 53px;
+    width: 40px;
     height: auto;
     position: absolute;
     float: right;
     right: 0px;
-    bottom: 0px;
+    bottom: -12px;
+
 }
 
 .msg-user-avatar-name {
@@ -521,9 +521,19 @@ input[type="button"]:hover {
     background-color: #0667c3;
     padding: 17px;
     float: right;
-    width: calc(100% - 58px);
-    margin-right: 58px;
+    width: calc(100% - 48px);
+    margin-right: 48px;
     z-index: 10;
+}
+
+.msg-user-ponta{
+    width: 90px;
+    height: 30px;
+    background-color: #0667c3;
+    transform: rotate(89deg) scale(0.500) skew(-43deg) translate(-52px);
+    position: absolute;
+    right: 10px;
+    bottom: -23px;
 }
 
 
