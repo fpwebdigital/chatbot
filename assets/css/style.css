@@ -622,14 +622,20 @@ input[type="button"]:hover {
 }
 
 .msg-senac ul li {
-    background-color: #848e9a;
+    background-color: #ffffff;
     padding: 10px;
     cursor: pointer;
-    margin: 5px;
+    margin: -1px;
     list-style: none;
-    border-radius: 5px;
-    color: #ffffff;
+    color: #004c94;
+    text-transform: uppercase;
+    border: solid 1px #000000;
 }
+
+.msg-senac ul li:first-child {
+    border-radius: 18px 18px 1px 1px;
+}
+
 
 .msg-senac ul li:hover  {
     background-color: #b8bdc3;
