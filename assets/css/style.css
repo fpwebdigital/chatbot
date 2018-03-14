@@ -680,6 +680,66 @@ input[type="button"]:hover {
     margin-bottom: 10px;
     margin-top: -4px;
 }
+.lista-ead-icon-1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-periodo.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+.lista-ead-icon-2 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-formas.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+.lista-ead-icon-3 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-resultado.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+.lista-ead-icon-4 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-matricula.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+.lista-ead-icon-5 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    float: left;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-outras.png");
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+
+
+
+
 
 
 .msg-senac button {
