@@ -566,6 +566,7 @@ input[type="button"]:hover {
     width: 53px;
     height: 46px;
     background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-avatar-left.png");
+    background-repeat: no-repeat;
 }
 
 .msg-senac-ponta{
