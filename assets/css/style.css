@@ -25,7 +25,22 @@ body {
     position: fixed;;
     right: 22px;
     bottom: 22px;
+    z-index: 1;
 }
+
+avatar-isa-topo {
+    width: 61px;
+    height: 120px;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/avatar-topo.png");
+    z-index: 8;
+    bottom: 528px;
+    position: absolute;
+    right: 304px;
+}
+.titulo-topo {
+    margin-left: 71px;
+}
+
 .container-icon-bg {
     border: solid 2px #f79420;
     outline: none;
