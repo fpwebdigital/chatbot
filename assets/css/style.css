@@ -491,7 +491,7 @@ input[type="button"]:hover {
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: #0667c3;
+    background-color: lawngreen;
     position: relative;
     width: auto;
     height: auto;
@@ -506,10 +506,9 @@ input[type="button"]:hover {
     float: right;
     right: 0px;
     bottom: 0px;
-    background-color: aqua;
 }
 
-.msg-senac-avatar-name {
+.msg-user-avatar-name {
     width: 100%;
     height: auto;
     text-align: center;
@@ -519,10 +518,10 @@ input[type="button"]:hover {
 
 .msg-user-text {
     border-radius: 18px 18px 1px;
-    background-color: #ececed;
+    background-color: #0667c3;
     padding: 17px;
     float: right;
-    width: calc(100% - 63px);
+    width: calc(100% - 58px);
     margin-right: 58px;
     z-index: 10;
 }
