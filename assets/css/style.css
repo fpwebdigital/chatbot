@@ -318,6 +318,33 @@ body {
     line-height: 48px;
 }
 
+/* DIV Status*/
+
+.status-on {
+    color: #00695c;
+    font-style: italic;
+    font-size: 9px;
+    background-color: #dcedc8;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+.status-on {
+    color: #ff3d00;
+    font-style: italic;
+    font-size: 9px;
+    background-color: #ffccbc;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 
 /* STARS - Recomendação*/
 
