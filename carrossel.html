@@ -5,7 +5,7 @@
     <title>Title</title>
 
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/fpwebdigital/chatbot/master/assets/css/swiper.css">
     <style>
         html, body {
             position: relative;
@@ -63,16 +63,21 @@
 </div>
 
 <!-- Swiper JS -->
-<script src="../dist/js/swiper.min.js"></script>
+<script src="https://rawgit.com/fpwebdigital/chatbot/master/assets/swiper.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween:20,
+        centeredSlides: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 </script>

@@ -152,7 +152,7 @@ body {
 .chat-content-header {
     background-color: #004c94;
     width: 100%;
-    height: 100px;
+    height: 101px;
     padding: 20px 0 15px;
     color: #ffffff;
     font-size: 14px;
@@ -323,11 +323,11 @@ body {
 .status-on {
     color: #00695c;
     font-style: italic;
-    font-size: 9px;
+    font-size: 11px;
     background-color: #dcedc8;
     width: 100%;
     height: auto;
-    padding: 1px;
+    padding: 2px;
     text-align: center;
     margin-top: 10px;
 }
@@ -336,15 +336,38 @@ body {
 .status-off {
     color: #ff3d00;
     font-style: italic;
-    font-size: 9px;
+    font-size: 11px;
     background-color: #ffccbc;
     width: 100%;
     height: auto;
-    padding: 1px;
+    padding: 2px;
     text-align: center;
     margin-top: 10px;
 }
 
+/* Swiper - Banners*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
 /* STARS - Recomendação*/
 
