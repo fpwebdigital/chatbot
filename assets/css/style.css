@@ -1036,7 +1036,7 @@ img {
 }
 
 
-/* Estilo Chat Responsivo */
+/* iPhone 6, 7, & 8 in portrait */
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -1057,5 +1057,50 @@ and (orientation : portrait) {
     }
 
 
+
+}
+/* iPhone 6, 7, & 8 Plus in landscape */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+    .chat-content {
+        width: 340px;
+        height: 470px;
+    }
+
+    .avatar-isa-topo {
+        right: 269px;
+        bottom: 468px;
+    }
+
+    #chat_box {
+        height: 466px;
+    }
+}
+
+/* iPhone 5, 5S & 6se in portrait */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+    .chat-content {
+        width: 275px;
+        height: 400px;
+    }
+
+    .avatar-isa-topo {
+
+        display: none;
+    }
+
+    #chat_box {
+        height: 354px;
+    }
+
+    .chat-content-header {
+        font-size: 10px;
+    }
 
 }
