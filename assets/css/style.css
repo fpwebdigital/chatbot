@@ -897,11 +897,6 @@ input[type="button"]:hover {
     #chat_box { padding-bottom: 70px; }
 
     #message { width: 75%; }
-    #send_btn {
-        position: relative;
-        margin-top: 3px;
-        width: 20%;
-    }
 }
 
 
@@ -1038,4 +1033,29 @@ img {
     .prev, .next,.text {
         font-size: 11px
     }
+}
+
+
+/* Estilo Chat Responsivo */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+    .chat-content {
+        width: 340px;
+        height: 470px;
+    }
+
+    .avatar-isa-topo {
+        right: 269px;
+        bottom: 468px;
+    }
+
+    #chat_box {
+        height: 466px;
+    }
+
+
+
 }
