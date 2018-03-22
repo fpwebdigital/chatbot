@@ -351,7 +351,6 @@ body {
 /* Swiper - Banners*/
 
 .msg-senac-text-swiper {
-    background-color: aquamarine;
     width: 350px;
     height: 270px;
     position: relative;
@@ -362,8 +361,6 @@ body {
     height: 100%;
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
     color: #ffffff;
     /* Center slide text vertically */
     display: -webkit-box;
@@ -378,7 +375,40 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #ffffff;
+    -webkit-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+    -moz-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+    box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+}
+.swiper-wrapper {
+    height: auto;
+}
+.conteudo-swiper{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.img-banner-swiper{
+    width: 100%;
+    height: 153px;
+    position: relative;
+}
+.ibw-1 {
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/areas/img-area-1.png");
+}
+.txt-banner-swiper{
+    width: 88%;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+    color: #004c94;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: auto;
+
 }
 
 /* STARS - Recomendação*/

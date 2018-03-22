@@ -19,14 +19,19 @@
             margin: 0;
             padding: 0;
         }
+
+        .msg-senac-text-swiper {
+            width: 350px;
+            height: 270px;
+            position: relative;
+        }
+
         .swiper-container {
             width: 100%;
             height: 100%;
         }
         .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
+            color: #ffffff;
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -40,16 +45,67 @@
             -ms-flex-align: center;
             -webkit-align-items: center;
             align-items: center;
+            background-color: #ffffff;
+            -webkit-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+            -moz-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+            box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
         }
+        .swiper-wrapper {
+            height: auto;
+        }
+        .conteudo-swiper{
+            width: 100%;
+            height: auto;
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .img-banner-swiper{
+            width: 100%;
+            height: 153px;
+            position: relative;
+        }
+        .ibw-1 {
+            background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/areas/img-area-1.png");
+        }
+        .txt-banner-swiper{
+            width: 88%;
+            height: 60px;
+            position: relative;
+            text-align: center;
+            font-size: 15px;
+            color: #004c94;
+            padding: 10px;
+            background-color: #ffffff;
+            margin: auto;
+
+        }
+
     </style>
 
 </head>
 <body>
+<div class="msg-senac-text-swiper">
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">
+            <div class="conteudo-swiper">
+                <div class="img-banner-swiper ibw-1"></div>
+                <div class="txt-banner-swiper">Arquitetura e Urbanismo</div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="conteudo-swiper">
+                <div class="img-banner-swiper ibw-1"></div>
+                <div class="txt-banner-swiper">Meio Ambiente, Segurança e Saúde no Trabalho</div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="conteudo-swiper">
+                <div class="img-banner-swiper ibw-1"></div>
+                <div class="txt-banner-swiper">Arquitetura e Urbanismo</div>
+            </div>
+        </div>
         <div class="swiper-slide">Slide 4</div>
         <div class="swiper-slide">Slide 5</div>
         <div class="swiper-slide">Slide 6</div>
@@ -60,8 +116,11 @@
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-</div>
 
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+</div>
 <!-- Swiper JS -->
 <script src="https://rawgit.com/fpwebdigital/chatbot/master/assets/swiper.js"></script>
 
@@ -69,7 +128,7 @@
 <script>
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
-        spaceBetween:20,
+        spaceBetween:10,
         centeredSlides: true,
         pagination: {
             el: '.swiper-pagination',
