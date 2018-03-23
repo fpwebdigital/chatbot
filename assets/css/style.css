@@ -379,6 +379,7 @@ body {
     -webkit-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
     -moz-box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
     box-shadow: -1px 1px 14px -1px rgba(207,207,207,1);
+    height: auto;
 }
 .swiper-wrapper {
     height: auto;
@@ -408,6 +409,13 @@ body {
 .ibw-11 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/areas/img-area-11.png");  }
 .ibw-12 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/areas/img-area-12.png");  }
 .ibw-no-image {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/areas/img-area-no-image.png");  }
+
+
+.und-1 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und1.png");  }
+.und-2 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und2.png");  }
+.und-3 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und3.png");  }
+.und-4 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und4.png");  }
+.und-5 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und5.png");  }
 
 
 .txt-banner-swiper{
