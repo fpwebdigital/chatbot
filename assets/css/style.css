@@ -915,20 +915,21 @@ input[type="button"]:hover {
 
 
 .msg-senac button {
-    background-color: #f7941d;
-    border: solid 1px #f7941d;
-    padding: 10px;
+    background-color: transparent;
+    border: solid 1px #afafaf;
+    padding: 6px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #004c94;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .msg-senac button:hover {
     background-color: #004c94;
     border: solid 1px #004c94;
     cursor: pointer;
+    color: #ffffff;
 }
 
 
