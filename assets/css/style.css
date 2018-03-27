@@ -1137,6 +1137,7 @@ and (orientation: portrait) {
     .chat-content {
         width: 340px;
         height: 470px;
+        right: 9px;
     }
 
     .avatar-isa-topo {
