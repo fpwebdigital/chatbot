@@ -420,16 +420,16 @@ body {
 
 
 .txt-banner-swiper{
-    width: 88%;
-    height: 60px;
+    width: 100%;
     position: relative;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     color: #004c94;
-    padding: 10px;
+    padding: 7px;
     background-color: #ffffff;
     margin: auto;
-
+    line-height: 16px;
+    min-height: 50px;
 }
 
 .txt-banner-swiper-end {
