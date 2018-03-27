@@ -1108,7 +1108,7 @@ img {
 
 /* iPhone 6, 7, & 8 in portrait */
 @media only screen
-and (min-device-width : 360px)
+and (min-device-width : 375px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
 
@@ -1127,6 +1127,27 @@ and (orientation : portrait) {
     }
 
 
+
+}
+
+
+@media only screen
+and (min-width: 360px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 3.0) {
+    .chat-content {
+        width: 340px;
+        height: 470px;
+    }
+
+    .avatar-isa-topo {
+        right: 269px;
+        bottom: 468px;
+    }
+
+    #chat_box {
+        height: 466px;
+    }
 
 }
 /* iPhone 6, 7, & 8 Plus in landscape */
