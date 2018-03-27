@@ -416,6 +416,7 @@ body {
 .und-3 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und3.png");  }
 .und-4 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und4.png");  }
 .und-5 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und5.png");  }
+.und-6 {  background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/unidade/und5.png");  }
 
 
 .txt-banner-swiper{
@@ -429,6 +430,20 @@ body {
     background-color: #ffffff;
     margin: auto;
 
+}
+
+.txt-banner-swiper-end {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    color: #777777;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 /* STARS - Recomendação*/
