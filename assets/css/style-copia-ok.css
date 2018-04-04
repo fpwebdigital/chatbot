@@ -683,7 +683,7 @@ input[type="button"]:hover {
     outline: none;
     cursor: pointer;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     color: #ffffff;
     z-index: 5;
@@ -725,7 +725,6 @@ input[type="button"]:hover {
     position: absolute;
     right: 5px;
     bottom: -23px;
-    display: none;
 }
 
 
@@ -739,7 +738,7 @@ input[type="button"]:hover {
     outline: none;
     cursor: pointer;
     position: relative;
-    width: 100%;
+    width: auto;
     height: auto;
     color: #6b6b6b;
     z-index: 1;
@@ -779,7 +778,6 @@ input[type="button"]:hover {
     left: 21px;
     bottom: -6px;
     z-index: 3;
-    display: none;
 }
 
 
