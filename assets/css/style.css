@@ -1,32 +1,105 @@
-body {
-    margin: 0 auto;
-    padding: 0 auto;
-    overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-}
 
-#bg-senac {
-    width: 100%;
-    height: 1957px;
-    margin: auto;
-    position: relative;
-    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/background-senac.png");
-    background-position: center top;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-.hide {
-    display: none;
-}
 
-/* ====== Icon Chat and Approach ======*/
-
+/* ====== Icon Chat and Initial Approach ======*/
 .container-icon {
     opacity: 1;
     position: fixed;;
     right: 22px;
     bottom: 22px;
-    z-index: 1;
+    width: 83px;
+    height: 83px;
+    background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-avatar-intro.png");
+    z-index: 5;
+    cursor: pointer;
 }
+#initial-approach {
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 380px;
+    height: auto;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    right: 32px;
+    bottom: 117px;
+    z-index: 6;
+}
+#topo-chat-intro {
+    background-color: #004c94;
+    width: 100%;
+    height: 57px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+
+    border-radius: 8px 8px 0px 0px;
+}
+
+.topo-chat-intro-txt{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    width: 89%;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+.bt-close {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    width: 5%;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    margin-top: 7px;
+    cursor: pointer;
+}
+.txt-initial-approach{
+    color: #848e9a;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+.txt-ini-blue {
+    font-weight: 700;
+    color: #004c94;
+}
+.btn-orange{
+    border:none;
+    border-color:transparent;
+    background-color: #f79420;
+    color:#FFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    display: block;
+    width: 105px;
+    text-align: center;
+}
+.btn-orange:hover {
+    background-position:top left;
+    background-color: #e28225;
+    color:#FFF;
+}
+.btn-orange.active{
+    background-color: #f79420 !important;
+    color:#FFF;
+    background-image:none;
+}
+/* ====== End Initial Approach ======*/
+
+
+
 
 .avatar-isa-topo {
     width: 61px;
@@ -41,6 +114,7 @@ body {
 .titulo-topo {
     margin-left: 71px;
 }
+
 
 .container-icon-bg {
     border: solid 2px #f79420;
@@ -59,24 +133,31 @@ body {
     background-position-y: 1px;
 }
 
+
+
 .container-icon-bg img {
     width: 59px !important;
     margin-left: 4px !important;
     margin-top: 5px !important;
 }
 
-#initial-approach {
-    position: fixed;
-    background-color: #ffffff;
-    width: 275px;
-    height: 120px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
-    box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
-    right: 22px;
-    bottom: 100px;
-    animation: fadein 4s;
+
+
+@-webkit-keyframes flickerAnimation{
+    0%   { opacity:1;
+    transition-delay: 2s}
+    50%  { opacity:0;
+    transition-delay: 5s}
+    100% { opacity:1;
+        transition-duration: 50s;
+    }
 }
+.animate-flicker {
+    animation: flickerAnimation infinite;
+}
+
+
+
 .title-initial-approach{
     color: #f7941d;
     font-size: 12px;
@@ -85,22 +166,9 @@ body {
     margin-top: 10px;
 }
 
-.txt-initial-approach{
-    color: #848e9a;
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
-    margin-top: 8px;
-}
-.bt-close {
-    color: #848e9a;
-    font-size: 12px;
-    font-weight: 400;
-    position: relative;
-    top: 5px;
-    right: -10px;
-    text-align: right;
-}
+
+
+
 .bt-close-chat {
      color: #ffffff;
      font-size: 14px;
@@ -116,6 +184,10 @@ body {
     text-decoration: none;
 }
 
+
+
+
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -123,22 +195,25 @@ body {
     to {
         opacity:1;
     }
+    to {
+        opacity: 0;
 }
+
+
 
 /* ====== Chat ======*/
 
 .chat-content {
-    position: fixed;
+    position: relative;
     background-color: #ffffff;
-    width: 380px;
-    height: 530px;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
-    right: 22px;
-    bottom: 100px;
     animation: fadeinchat 1s;
     overflow: hidden;
+    margin: auto;
 }
 @keyframes fadeinchat {
     from {
@@ -158,6 +233,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     box-shadow: 0 5px 11px 0 rgba(0,0,0,.2);
+    position: relative;
 }
 
 .titulo-banner {
@@ -542,7 +618,7 @@ form .stars span {
 #chat_box {
     overflow: auto;
     padding-bottom: 50px;
-    height: 383px;
+    height: calc(100% - 146px);
     width: 100%;
     padding: 15px;
     position: relative;
@@ -663,6 +739,7 @@ input[type="button"]:hover {
     position: absolute;
     right: 5px;
     bottom: -23px;
+    display: none;
 }
 
 
@@ -716,6 +793,7 @@ input[type="button"]:hover {
     left: 21px;
     bottom: -6px;
     z-index: 3;
+    display: none;
 }
 
 
@@ -1106,7 +1184,7 @@ img {
 
 
 
-/* iPhone 6, 7, & 8 in portrait */
+/* iPhone 6, 7, & 8 in portrait
 @media only screen
 and (min-device-width : 375px)
 and (max-device-width : 667px)
@@ -1150,7 +1228,7 @@ and (orientation: portrait) {
     }
 
 }
-/* iPhone 6, 7, & 8 Plus in landscape */
+iPhone 6, 7, & 8 Plus in landscape
 @media only screen
 and (min-device-width : 414px)
 and (max-device-width : 736px)

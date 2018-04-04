@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <!-- Viewport -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>SENAC - Chatbot</title>
+</head>
+<body>
+
+<!-- Intro do Chat -->
+
+
+<div id="fadeIn" class="container-icon"></div>
+
+<div id="initial-approach" style="display: none;">
+    <div id="topo-chat-intro">
+        <div class="topo-chat-intro-txt">Assistente virtual do Senac São Paulo</div>
+        <div id="fadeOut" class="bt-close" onclick="fadeOut('initial-approach')">X</div>
+    </div>
+    <div class="txt-initial-approach">
+        <p>Seja bem-vindo ao chat do Senac São Paulo.</p>
+        <p>Você será atendido pela nossa <span class="txt-ini-blue">assistente virtual</span> e para ajudar a interagir de forma que esclareça todas as suas dúvidas, elaboramos algumas orientações básicas.</p>
+        <p>- Nossa assistente está treinada para informar sobre cursos de <span class="txt-ini-blue">graduação</span> e informações do <span class="txt-ini-blue">vestibular</span>.</p>
+        <p>- Utilize os meios indicados nos diálogos para seguir a conversa ou faça <span class="txt-ini-blue">perguntas objetivas</span> pertinentes ao assunto.</p>
+        <p>- Caso tenha dúvidas sobre outros tipos de cursos ou informações, pedimos que entre em contato com nossa central de atendimento no telefone 4090-1030 para capitais e regiões metropolitanas e 0800-883-2000 para demais regiões.</p>
+        <a class="btn-orange" id="faddeIn" href="javascript:window.open('https://dsblackopsdemo.mybluemix.net/chat', 'bot', 'resizable=no,toolbar=no,scrollbars=yes,menubar=no,status=no,directories=no,width=500,height=610,left=1000,top=100');void(0);" title="Assistente Virtual Senac São Paulo" onclick="ga('send', 'iniciar-chat')"> INICIAR CHAT</a
+    </div>
+</div>
+
+
+<!-- JavaScript ShowHide Intro-->
+<script>
+    document.getElementById('fadeIn').addEventListener('click', function()
+    {
+        var intro = document.getElementById('initial-approach');
+
+        if(intro.style.display === "none") {
+            intro.style.display = "block";
+        } else {
+            intro.style.display = "none";
+        }
+    });
+    function fadeOut(target) {
+        document.getElementById(target).style.display = 'none';
+    }
+</script>
+
+
+
+</body>
+</html>
