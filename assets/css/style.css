@@ -1161,4 +1161,15 @@ img {
 .active, .dot:hover {
     background-color: #717171;
 }
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
 */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .chat-content {
+        width: 60%;
+    }
+
+}
