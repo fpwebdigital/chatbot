@@ -109,6 +109,7 @@
     bottom: 528px;
     position: absolute;
     right: 304px;
+    display: none;
 }
 
 .titulo-topo {
