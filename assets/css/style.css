@@ -4,6 +4,9 @@
 
 /* ====== Icon Chat and Initial Approach ======*/
 .container-icon {
+    display: none;
+}
+.icon-isa {
     opacity: 1;
     position: fixed;;
     right: 22px;
@@ -13,7 +16,9 @@
     background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icon-avatar-intro.png");
     z-index: 5;
     cursor: pointer;
+    display: none;
 }
+
 #initial-approach {
     position: fixed;
     background-color: #FFFFFF;
