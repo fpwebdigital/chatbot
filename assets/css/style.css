@@ -593,8 +593,7 @@ form .stars span {
 
 #chat_box {
     overflow: auto;
-    padding-bottom: 50px;
-    height: 383px;
+    height: calc(100% - 150px);
     width: 100%;
     padding: 15px;
     position: relative;
