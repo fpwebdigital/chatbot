@@ -852,6 +852,54 @@ input[type="button"]:hover {
 
 /*ÍCONES DAS LISTAS*/
 
+.icon-lista {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    float: left;
+    margin-right: 11px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: -4px;
+}
+.icon-001 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/001-presencial.png");}
+.icon-002 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/002-ead.png");}
+.icon-003 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/003-conteudoprogramatico.png");}
+.icon-004 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/005-prazomatricula.png");}
+.icon-005 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/006-nao.png");}
+
+.icon-006 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/008-turnoperiodo.png");}
+.icon-007 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/009-periodotaxa.png");}
+.icon-008 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/010-descricao.png");}
+.icon-009 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/012-diploma.png");}
+.icon-010 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/013-redacaoonline.png");}
+
+.icon-011 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/014-como-matricula.png");}
+.icon-012 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/017-senac.png");}
+.icon-013 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/021-exterma.png");}
+.icon-014 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/023-interna.png");}
+.icon-015 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/022-sim.png");}
+
+.icon-016 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/024-localenvio.png");}
+.icon-017 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/026-documentacao.png");}
+.icon-018 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/027-transferencia.png");}
+.icon-019 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/028-outras.png");}
+.icon-020 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/029-resultado.png");}
+
+.icon-021 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/030-matricula.png");}
+.icon-022 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/031-ingresso.png");}
+.icon-023 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/032-periodopng");}
+.icon-024 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/034-enem.png");}
+.icon-025 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/035-valores.png");}
+
+.icon-026 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/png/037-vestibular.png");}
+.icon-027 {background-image: url("http://www.digisystem.com.br/chatbot-senac/assets/img/icons/038-graduacao.png");}
+
+
+
+
+
+
 .lista-vestibular-icon-1 {
     width: 30px;
     height: 30px;

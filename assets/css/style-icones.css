@@ -1,0 +1,38 @@
+.bg-icones {
+    width: 100%;
+    height: 300px;
+    background-color: #004c94;
+    margin-top: 20px;
+    position: relative;
+}
+
+.bg-classes {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.bg-divider {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    border-top: solid 1px #cccccc;
+    padding-top: 20px;
+}
+.bg-classes-codigo {
+    width: auto;
+    height: auto;
+    margin-top: 5px;
+    position: relative;
+    margin-right: 30px;
+}
+
+.name-icon {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #4d4d4c;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 10px;
+}
