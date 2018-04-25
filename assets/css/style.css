@@ -801,7 +801,7 @@ input[type="button"]:hover {
 .msg-senac a:visited,
 .msg-user a:link,
 .msg-user a:visited{
-    color: #FFF;
+    color: #ff7f00;
     cursor: pointer;
 }
 
